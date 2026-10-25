@@ -1,0 +1,33 @@
+{
+  "name": "racing-studio-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Estúdio local de produção de vídeos de gameplay de corrida com narração (M0 + M1).",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "npm run dev -w @rs/api",
+    "dev:worker": "npm run dev -w @rs/worker",
+    "dev:web": "npm run start -w @rs/web",
+    "doctor": "node scripts/doctor.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build:web": "npm run build -w @rs/web",
+    "demo:video": "node scripts/make-demo-video.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

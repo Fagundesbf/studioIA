@@ -1,0 +1,14 @@
+{
+  "name": "@rs/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env src/main.ts",
+    "start": "tsx --env-file-if-exists=../../.env src/main.ts"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^10.1.6",
+    "fastify": "^5.12.7"
+  }
+}

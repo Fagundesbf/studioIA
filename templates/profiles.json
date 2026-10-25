@@ -1,0 +1,7 @@
+{
+  "$comment": "Perfis de produto (spec §3). Não são declarações sobre limites atuais das plataformas.",
+  "gameplay_narrado": { "format": "horizontal", "width": 1920, "height": 1080, "fps": 30, "targetDurationSec": [360, 720], "structure": ["gancho", "contexto", "desenvolvimento", "fechamento"] },
+  "short": { "format": "vertical", "width": 1080, "height": 1920, "fps": 30, "targetDurationSec": [20, 60], "structure": ["gancho", "desenvolvimento", "fechamento"] },
+  "audio": { "targetLufs": -14, "truePeakDb": -1, "duckedGameVolume": 0.25 },
+  "captions": { "maxLines": 2, "maxCharsPerLine": 42 }
+}
